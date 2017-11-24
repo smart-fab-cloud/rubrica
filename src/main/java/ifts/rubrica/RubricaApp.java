@@ -11,11 +11,11 @@ public class RubricaApp extends Application<RubricaConfig> {
     
     @Override
     public void run(RubricaConfig configuration, Environment environment) {
-        final Rubrica risorsaInventario = new Rubrica(
+        final Rubrica risorsaRubrica = new Rubrica(
                 configuration.getNomePredefinito()
         );
         
-        environment.jersey().register(risorsaInventario);
+        environment.jersey().register(risorsaRubrica);
     }
     
 }
